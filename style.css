@@ -87,11 +87,30 @@ transition-duration: .5s;
     border-radius: 30px;
 
 }
-.view:hover{
+.view a{
+    color: white;
+}
+.view:hover, .view a:hover{
     background-color: white;
     cursor: pointer;
     border:1px solid #eb5d1e;
     color: #eb5d1e;
+    transition-duration: .4s; 
+}
+.view a:hover{
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    color: #eb5d1e;
+    transition-duration: .5s; 
+}
+.bg-linear:hover{
+    transform: translateY(-5px);
+    background-color: white;
+    cursor: pointer;
+    border:1px solid #eb5d1e;
+    transition-duration: .5s;
+
 }
 .inner{
     text-align: center;
@@ -108,3 +127,8 @@ div>h5>a{
     text-decoration: none;
     color: black;
 }
+.bg-linear{
+    background-image: linear-gradient(#f0e1da,white);
+}
+/* css copy */
+
